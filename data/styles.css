@@ -1,0 +1,113 @@
+﻿/*mobile view container 640x360 resolution*/
+.main-app-view {
+    width: 360px;
+    height: 640px;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid rgba(121, 121, 121, 1);
+}
+
+.button {
+    position: absolute;
+}
+
+.primary_button {
+    color: white;
+    background: mediumseagreen;
+}
+
+#acceptRegulationBtn {
+    top: 520px;
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(121, 121, 121, 1);
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+body {
+    margin: 0px;
+    background-image: none;
+    position: static;
+    left: auto;
+    width: 290px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+body.b {
+    position: relative;
+    left: -0px;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#footer {
+    margin: 0;
+    position: absolute;
+    left: 120px;
+    top: 610px;
+    width: 123px;
+    height: 17px;
+}
+
+#backToLoginPageBtn {
+    top: 570px;
+    width: 300px;
+    height: 40px;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border: 1px solid rgba(121, 121, 121, 1);
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+#textareaContainer {
+    border-width: 0;
+    position: absolute;
+    left: 47px;
+    top: 180px;
+    width: 266px;
+    height: 320px;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000000;
+    text-align: left
+}
+
+#textarea {
+    margin: 0px;
+    width: 265px;
+    height: 314px;
+
+}
+
+#label {
+    top: 145px;
+    width: 196px;
+    height: 17px;
+
+}
+
+#labelTxt {
+    position: absolute;
+    top: 140px;
+}
+
+#logoContainer {
+    width: 266px;
+    height: 96px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 20px 40px;
+    border-style: solid;
+}
+
