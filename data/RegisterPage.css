@@ -8,19 +8,17 @@
 }
 
 body {
-    margin: 0px;
     background-image: none;
     position: static;
     left: auto;
     width: 290px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
     text-align: left;
 }
 
 body.b {
     position: relative;
-    left: -0px;
+    left: 0px;
     width: 360px;
     margin-left: auto;
     margin-right: auto;
@@ -47,10 +45,7 @@ body.b {
 .user-photo {
 	width: 25%;
     height: 25%;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-top:12.5%;
-    padding-bottom: 12.5%;
+    padding:12.5% 5%;
     font-size: 30px;
 }
 .add-photo-button{
@@ -58,4 +53,19 @@ body.b {
 }
 input{
    text-align:center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.message-container {
+    height: 200px;
+}
+
+.icon-container {
+    height: 20px;
+
 }
