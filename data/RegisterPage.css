@@ -27,98 +27,24 @@ body.b {
     text-align: left;
 }
 
-#logoContainer {
-    width: 266px;
-    height: 96px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    margin: 20px 40px;
-    border-style: solid;
+.logo {
+    width: 25%;
+    height: 25%;
+    font-size: 30px;
 }
-
-#image {
-	position: absolute;
-	left: 40px;
-    top: 150px;
-    width: 90px;
-    height: 90px;
-    margin: 0px 0px;
-    border-style: solid;
+.top-buffer { margin-top:20px; }
+.user-photo {
+	width: 25%;
+    height: 25%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top:12.5%;
+    padding-bottom: 12.5%;
+    font-size: 30px;
 }
-
-#addPhoto {
-	position: absolute;
-	left: 150px;
-	top: 215px;
-	width: 160px;
-	height: 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
+.add-photo-button{
+	padding-bottom: 10%;
 }
-
-#inputFN {
-	position: absolute;
-	left: 45px;
-	top: 280px;
-	width: 255px;
-	height: 30px;
-	border-radius: 10px;
-	text-align: center;
-	color: grey;
-	font-size: 19px;
-	font-style: italic;
-}
-
-#inputLN {
-	position: absolute;
-	left: 45px;
-	top: 330px;
-	width: 255px;
-	height: 30px;
-	border-radius: 10px;
-	text-align: center;
-	color: grey;
-	font-size: 19px;
-	font-style: italic;
-}
-
-#inputMail {
-	position: absolute;
-	left: 45px;
-	top: 380px;
-	width: 255px;
-	height: 30px;
-	border-radius: 10px;
-	text-align: center;
-	color: grey;
-	font-size: 19px;
-	font-style: italic;
-}
-
-#password {
-	position: absolute;
-	left: 45px;
-	top: 430px;
-	width: 255px;
-	height: 30px;
-	border-radius: 10px;
-	text-align: center;
-	color: grey;
-	font-size: 19px;
-	font-style: italic;
-}
-
-#confPassword {
-	position: absolute;
-	left: 45px;
-	top: 480px;
-	width: 255px;
-	height: 30px;
-	border-radius: 10px;
-	text-align: center;
-	color: grey;
-	font-size: 19px;
-	font-style: italic;
+input{
+   text-align:center;
 }
