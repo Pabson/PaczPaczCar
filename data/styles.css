@@ -114,4 +114,12 @@ body.b {
     margin: 20px 40px;
     border-style: solid;
 }
+.button-container {
+    margin-left: 20% !important;
+}
+
+.textarea-container {
+    margin-bottom: 20px;
+}
+
 
