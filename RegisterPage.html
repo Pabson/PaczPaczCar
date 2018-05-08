@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>RegisterPage</title>
-    	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    	<meta name="apple-mobile-web-app-capable" content="yes"/>
-    	<link href="data/RegisterPage.css" type="text/css" rel="stylesheet"/>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+    <title>RegisterPage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="data/RegisterPage.css" type="text/css" rel="stylesheet"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	</head>
-	<body>
-			<div class="container">
-                <div class="col-md-3 col-md-offset-6 col-sm-3 col-sm-offset-6">
-                    <div class="row top-buffer">
-    				    <div class="col-md-offset-5 col-sm-offset-5">
-                		  <span class="glyphicon glyphicon-camera logo" aria-hidden="true"></span>
-            		    </div>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="col-md-3 col-md-offset-6 col-sm-3 col-sm-offset-6">
+        <div class="row top-buffer">
+            <div class="col-md-offset-5 col-sm-offset-5">
+                <span class="glyphicon glyphicon-camera logo" aria-hidden="true"></span>
+            </div>
+        </div>
+        <div class="row top-buffer">
+            <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1">
+                <span class="glyphicon glyphicon-picture user-photo" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+                <button type="button" class="btn btn-default add-photo-button">Add Photo</button>
+            </div>
+        </div>
+        <div class="row top-buffer">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <!--<label for="inputFN">First Name</label>-->
+                    <input id="inputFN" class="form-control" type="text" name="firstName" value="FIRST NAME">
+                </div>
+                <div class="form-group">
+                    <input id="inputLN" class="form-control" type="text" name="lastName" value="LAST NAME">
+                </div>
+                <div class="form-group">
+                    <input id="inputMail" class="form-control" type="email" name="lastName" value="EMAIL">
+                </div>
+                <div class="form-group">
+                    <!-- NA RAZIE TYPE="text", PONIEWAŻ PASSWORD KROPKUJE VALUE-->
+                    <input id="password" class="form-control" type="text" name="password" value="PASSWORD">
+                </div>
+                <div class="form-group">
+                    <input id="confPassword" class="form-control" type="text" name="confirmPassword"
+                           value="CONFIRM PASSWORD">
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-2 control-label">Birthdate</label>
+                    <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                        <input id="date" class="form-control" type="date" name="birthdate" value="date">
                     </div>
-        		    <div class="row top-buffer">
-                                <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1">
-                    			 <span class="glyphicon glyphicon-picture user-photo" aria-hidden="true"></span>
-                                </div>
-                                <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
-                    			 <button type="button" class="btn btn-default add-photo-button">Add Photo</button>
-                        </div>
-        		    </div>
-                <div class="row top-buffer">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <!--<label for="inputFN">First Name</label>-->
-                    		<input id="inputFN" class="form-control" type="text" name="firstName" value="FIRST NAME">
-                        </div>
-                        <div class="form-group">
-                    		<input id="inputLN" class="form-control" type="text" name="lastName" value="LAST NAME">
-                        </div>
-                        <div class="form-group">
-                    		<input id="inputMail" class="form-control" type="email" name="lastName" value="EMAIL">
-                        </div>
-                        <div class="form-group">
-                    		<!-- NA RAZIE TYPE="text", PONIEWAŻ PASSWORD KROPKUJE VALUE-->
-                    		<input id="password" class="form-control" type="text" name="password" value="PASSWORD">
-                        </div>
-                        <div class="form-group">
-                            <input id="confPassword" class="form-control" type="text" name="confirmPassword" value="CONFIRM PASSWORD">
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-md-2 control-label">Birthdate</label>
-                            <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-                    		  <input id="date" class="form-control" type="date" name="birthdate" value="date">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-sm-2 col-md-2 control-label">Gender</label>
-                            <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-                            <label class="radio-inline">
-                              <input type="radio" name="gender" id="male" value="male"> Male
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="gender" id="female" value="female"> Female
-                            </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                        <label class="checkbox-inline">
-                          <input type="checkbox" id="inlineCheckbox1" value="option1"> Accept Application Regulation
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-2 control-label">Gender</label>
+                    <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" id="male" value="male"> Male
                         </label>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-4 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">Sign me up</button>
-                            </div>
-                        </div>
-                        </form>
-                        <div class="col-sm-offset-3 col-md-offset-3">
-                        <h5>PaczPaczCar 2018</h5>
-                        </div>
+                        <label class="radio-inline">
+                            <input type="radio" name="gender" id="female" value="female"> Female
+                        </label>
                     </div>
-			</div>
-	</body>
+                </div>
+                <div class="form-group">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1"> Accept Application Regulation
+                    </label>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-4 col-md-offset-4">
+                        <button type="submit" class="btn btn-primary">Sign me up</button>
+                    </div>
+                </div>
+            </form>
+            <div class="col-sm-offset-3 col-md-offset-3">
+                <h5>PaczPaczCar 2018</h5>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>

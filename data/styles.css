@@ -16,6 +16,10 @@
     background: mediumseagreen;
 }
 
+.min-btn-width {
+    min-width: 165px;
+}
+
 #acceptRegulationBtn {
     top: 520px;
     width: 300px;
