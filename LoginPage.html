@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>RegisterPage</title>
+		<title>Login Page</title>
     	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     	<meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -19,36 +19,34 @@
 	<body>
 			<div class="container">
                 <div class="col-md-3 col-md-offset-6 col-sm-3 col-sm-offset-6">
-                    <div class="row top-buffer">
+                    <div class="row">
     				    <div class="col-md-offset-0 col-sm-offset-0">
                 		  <img src="data/logo.png" class="logo login-logo" ></img>
             		    </div>
                     </div>
-                    <div class="row top-buffer">
+                    <div class="row top-buffer-large">
                         <form class="form-horizontal">
                             <div class="form-group">
-                        		<input id="inputMail" class="form-control" type="email" name="email" value="EMAIL">
+                        		<input id="inputMail" class="form-control" type="email" name="email" placeholder="EMAIL">
                             </div>
                             <div class="reset-margin-bottom form-group">
-                        		<!-- NA RAZIE TYPE="text", PONIEWAŻ PASSWORD KROPKUJE VALUE-->
-                        		<input id="password" class="form-control" type="text" name="password" value="PASSWORD">
+                        		<input id="password" class="form-control" type="text" name="password" placeholder="PASSWORD">
                             </div>
                             <div class="form-group">
-                                <!-- NA RAZIE TYPE="text", PONIEWAŻ PASSWORD KROPKUJE VALUE-->
                                 <h5>Forgot your Password?</h5>
                             </div>
                             <div class="form-group">
-                                <div class="">
-                                    <button type="submit" class="btn btn-primary submit-button">Login</button>
+                                <div>
+                                    <button type="button" onclick="location.href='LandingPage.html'" class="btn btn-primary submit-button">Login</button>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="">
-                                    <button type="submit" class="btn btn-primary submit-button">Create an account</button>
+                                <div>
+                                    <button type="button" onclick="location.href='RegisterPage.html'" class="btn btn-primary submit-button">Create an account</button>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="center">
+                                <div class="text-center">
                                 <h5>PaczPaczCar 2018</h5>
                             </div>
                             </form>
