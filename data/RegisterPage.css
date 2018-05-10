@@ -71,5 +71,14 @@ input{
 
 .icon-container {
     height: 20px;
+}
 
+.button-right-position {
+    float: right !important;
+}
+
+.checkbox-left-position {
+    padding-top: 0 !important;
+    margin-bottom: 15px !important;
+    margin-left: 0 !important;
 }
