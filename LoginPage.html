@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="col-md-3 col-md-offset-6 col-sm-3 col-sm-offset-6 col-xs-offset-2 col-xs-12">
+    <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="row">
             <div class="col-md-offset-0 col-sm-offset-0">
                 <img src="data/logo.png" class="logo login-logo"></img>
@@ -31,13 +31,21 @@
         <div class="row top-buffer-large">
             <form class="form-horizontal">
                 <div class="form-group">
-                    <input id="inputMail" class="form-control" type="email" name="email" placeholder="EMAIL">
+                    <label class="col-sm-2 col-md-2 control-label" for="firstName">E-Mail</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="inputMail" class="form-control" type="email" name="email" placeholder="EMAIL">
+                    </div>
                 </div>
                 <div class="reset-margin-bottom form-group">
-                    <input id="password" class="form-control" type="text" name="password" placeholder="PASSWORD">
+                    <label class="col-sm-2 col-md-2 control-label" for="firstName">Password</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="password" class="form-control" type="text" name="password" placeholder="PASSWORD">
+                    </div>
                 </div>
                 <div class="form-group">
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
                     <h5><a href="ForgotPasswordPage.html">Forgot your Password?</a></h5>
+                    </div>
                 </div>
                 <div class="form-group">
                     <div>
