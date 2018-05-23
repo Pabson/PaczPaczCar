@@ -16,6 +16,7 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
@@ -28,22 +29,31 @@
             <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12 remove-padding">
                 <div class="input-group">
                       <span class="input-group-btn">
-                        <button class="btn btn-default white-backgound" type="button"> <span class="glyphicon glyphicon-search search search-icon"></span></button>
+                        <button class="btn btn-default white-backgound" type="button"> <span class="glyphicon glyphicon-home search search-icon"></span></button>
                       </span>
                     <input type="text" class="form-control" placeholder="Search for...">
                     <span class="input-group-btn">
-                        <button class="btn btn-default white-backgound" type="button"> <span class="glyphicon glyphicon-menu-hamburger search search-icon"></span></button>
-                  </span>
+                        <button class="btn btn-default white-backgound dropdown-toggle" type="button" data-toggle="dropdown"> <span class="glyphicon glyphicon-menu-hamburger search search-icon"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Go to ... 1</a></li>
+                            <li><a href="#">Go to ... 2</a></li>
+                            <li><a href="#">Go to ... 3</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+
+                    </span>
                 </div>
             </div>
         </div>
 
         </div>
         <div class="row top-buffer">
-            <div class="panel panel-default">
+            <div class="panel panel-default data-container">
                 <div class="panel-body" id="boxes">PACK READY TO BE DELIVERED IN YOUR'S NEIGHBORHOOD</div>
             </div>
-            <div class="panel panel-default">
+            <div class="panel panel-default data-container">
                 <div class="panel-body" id="boxes">DELIVERERS IN OUR NEAR AREA</div>
             </div>
             <form class="form-horizontal">
