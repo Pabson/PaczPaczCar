@@ -19,20 +19,24 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-    <link href="data/SenderPage.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
 <div class="container">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="row top-buffer">
-            <div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1">
-                <span class="glyphicon glyphicon-search search"></span>
-            </div>
-            <div class="col-md-3 col-md-offset-6 col-sm-3 col-sm-offset-6">
-                <span class="glyphicon glyphicon-user search"></span>
+    <div class="col-md-12 col-sm-12 col-xs-12 offset-down">
+        <div class="row search-bar">
+            <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12 remove-padding">
+                <div class="input-group">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default white-backgound" type="button"> <span class="glyphicon glyphicon-search search search-icon"></span></button>
+                      </span>
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default white-backgound" type="button"> <span class="glyphicon glyphicon-menu-hamburger search search-icon"></span></button>
+                  </span>
+                </div>
             </div>
         </div>
-        <hr width="100%"/>
 
         <div class="row top-buffer">
             <form class="form-horizontal">
