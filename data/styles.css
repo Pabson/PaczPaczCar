@@ -1,25 +1,4 @@
-﻿/*mobile view container 640x360 resolution*/
-.main-app-view {
-    width: 360px;
-    height: 640px;
-    padding: 30px;
-    box-sizing: border-box;
-    border: 1px solid rgba(121, 121, 121, 1);
-}
-
-.button {
-    position: absolute;
-}
-
-.primary_button {
-    color: white;
-    background: mediumseagreen;
-}
-
-.min-btn-width {
-    min-width: 165px;
-}
-
+﻿
 #acceptRegulationBtn {
     top: 520px;
     width: 300px;
