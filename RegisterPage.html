@@ -29,49 +29,60 @@
 
 <body>
 <div class="container">
-    <div class="col-md-3 col-md-offset-6 col-sm-3 col-sm-offset-6 col-xs-offset-2 col-xs-12">
+    <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="row">
-            <div class="col-md-offset-0 col-sm-offset-0">
-                <img src="data/logo.png" class="logo login-logo"></img>
-            </div>
+            <img src="data/logo.png" class="img-fluid logo login-logo"></img>
         </div>
-        <div class="row">
-            <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1">
+        <div class="row user-photo-row">
+            <div class="col-md-2 col-md-offset-1 col-sm-2 col-sm-offset-1 col-xs-1 col-xs-offset-1">
                 <span class="glyphicon glyphicon-picture user-photo" aria-hidden="true"></span>
             </div>
-            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
                 <button type="button" class="btn btn-default add-photo-button">Add Photo</button>
             </div>
         </div>
         <div class="row top-buffer-medium">
             <form class="form-horizontal">
                 <div class="form-group">
-                    <!--<label for="inputFN">First Name</label>-->
-                    <input id="inputFN" class="form-control" type="text" name="firstName" placeholder="FIRST NAME">
+                    <label class="col-sm-2 col-md-2 control-label" for="firstName">First Name</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="inputFN" class="form-control" type="text" name="firstName" placeholder="FIRST NAME">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input id="inputLN" class="form-control" type="text" name="lastName" placeholder="LAST NAME">
+                    <label class="col-sm-2 col-md-2 control-label" for="lastName">Last Name</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="inputLN" class="form-control" type="text" name="lastName" placeholder="LAST NAME">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input id="inputMail" class="form-control" type="email" name="lastName" placeholder="EMAIL">
+                    <label class="col-sm-2 col-md-2 control-label" for="email">E-mail</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="inputMail" class="form-control" type="email" name="email" placeholder="EMAIL">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <!-- NA RAZIE TYPE="text", PONIEWAŻ PASSWORD KROPKUJE VALUE-->
-                    <input id="password" class="form-control" type="text" name="password" placeholder="PASSWORD">
+                    <label class="col-sm-2 col-md-2 control-label" for="password">Password</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="password" class="form-control" type="password" name="password" placeholder="PASSWORD">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input id="confPassword" class="form-control" type="text" name="confirmPassword"
+                    <label class="col-sm-2 col-md-2 control-label" for="confPassword">Confirm Passowrd</label>
+                        <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="confPassword" class="form-control" type="password" name="confirmPassword"
                            placeholder="CONFIRM PASSWORD">
+                    </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-2 col-md-2 control-label">Birthdate</label>
-                    <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
                         <input id="date" class="form-control" type="date" name="birthdate" placeholder="date">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-2 col-md-2 control-label">Gender</label>
-                    <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
                         <label class="radio-inline">
                             <input type="radio" name="gender" id="male" value="male"> Male
                         </label>
@@ -79,17 +90,6 @@
                             <input type="radio" name="gender" id="female" value="female"> Female
                         </label>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class=" col-md-2 ">
-                        <label class="checkbox-inline form-group checkbox-left-position">
-                            <input id="acceptRegulationChbx" type="checkbox" class="form-control" name="regulation">
-                        </label>
-                    </div>
-                    <button type="button" onclick="goToRegultioPage()"
-                            class="btn btn-primary submit-button col-md-8 button-right-position">Accept User's
-                        Regulationss
-                    </button>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-offset-0 col-md-offset-0">
