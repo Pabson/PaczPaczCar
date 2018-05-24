@@ -1,14 +1,10 @@
-.search {
-    width: 25%;
-    height: 25%;
-    font-size: 30px;
+.nav-icon{
+    font-size: 10px;
+    max-width:10%;
+    max-height:10%;
 }
 .top-buffer { margin-top:20px; }
 
-#boxes {
-    height: 125px;
-    text-align: center;
-}
 .submit-button{
     width:50%;
     height:100%;
