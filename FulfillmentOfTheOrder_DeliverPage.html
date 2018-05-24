@@ -28,15 +28,33 @@
         <div class="row search-bar">
             <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12 remove-padding">
                 <div class="input-group">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default white-backgound" type="button"> <span
-                                class="glyphicon glyphicon-home search search-icon"></span></button>
-                      </span>
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default white-backgound" type="button"> <span
-                                class="glyphicon glyphicon-menu-hamburger search search-icon"></span></button>
-                  </span>
+                    <span class="input-group-btn padding-right">
+                        <button class="btn btn-default white-background remove-padding" type="button" onclick="location.href='LandingPage.html'">
+                            <img src="data/small_logo.PNG" class="small-image"></button>
+                    </span>
+
+                    <input type="text" class="form-control search-bar-height" placeholder="Search for...">
+                    <span class="input-group-btn padding-left">
+                        <button class="btn btn-default white-background" type="button" onclick="location.href='NotificationsPage.html'">
+                            <span class="glyphicon glyphicon-bell search search-icon large-icon"></span>
+                        </button>
+                    </span>
+
+                    <span class="input-group-btn padding-left">
+                        <button class="btn btn-default white-background dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-menu-hamburger search search-icon large-icon"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="MessagesPage.html">Messages</a></li>
+                            <li><a href="NotificationsPage.html">Notifications</a></li>
+                            <li><a href="OrderHistoryDetailsPage.html">Your orders history</a></li>
+                            <li><a href="SendHistoryDetailsPage.html">Your sending history</a></li>
+                            <li><a href="GroupsPage.html">Groups</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="HelpPage.html">Log Out</a></li>
+                            <li><a href="AccountSettingsPage.html">Account settings</a></li>
+                            <li><a href="LogoutPage.html">Log Out</a></li>
+                        </ul>
+                    </span>
                 </div>
             </div>
         </div>
