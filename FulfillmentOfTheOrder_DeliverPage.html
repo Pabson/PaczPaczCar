@@ -16,65 +16,93 @@
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-    <link href="data/FulfillmentOfTheOrder_DeliverPage.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
 <div class="container">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <!--<div class="row top-buffer">
-            <div class="col-md-offset-0 col-sm-offset-0">
-              <img src="data/logo.png" class="logo login-logo" ></img>
+    <div class="col-md-12 col-sm-12 col-xs-12 offset-down">
+        <div class="row search-bar">
+            <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12 remove-padding">
+                <div class="input-group">
+                    <span class="input-group-btn padding-right">
+                        <button class="btn btn-default white-background remove-padding" type="button" onclick="location.href='LandingPage.html'">
+                            <img src="data/small_logo.PNG" class="small-image"></button>
+                    </span>
+
+                    <input type="text" class="form-control search-bar-height" placeholder="Search for...">
+                    <span class="input-group-btn padding-left">
+                        <button class="btn btn-default white-background" type="button" onclick="location.href='NotificationsPage.html'">
+                            <span class="glyphicon glyphicon-bell search search-icon large-icon"></span>
+                        </button>
+                    </span>
+
+                    <span class="input-group-btn padding-left">
+                        <button class="btn btn-default white-background dropdown-toggle" type="button" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-menu-hamburger search search-icon large-icon"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="MessagesPage.html">Messages</a></li>
+                            <li><a href="NotificationsPage.html">Notifications</a></li>
+                            <li><a href="OrderHistoryDetailsPage.html">Your orders history</a></li>
+                            <li><a href="SendHistoryDetailsPage.html">Your sending history</a></li>
+                            <li><a href="GroupsPage.html">Groups</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="HelpPage.html">Log Out</a></li>
+                            <li><a href="AccountSettingsPage.html">Account settings</a></li>
+                            <li><a href="LogoutPage.html">Log Out</a></li>
+                        </ul>
+                    </span>
+                </div>
             </div>
-        </div>-->
-        <div class="row top-buffer">
-            <form class="form-horizontal">
-                <div class="reset-margin-bottom form-group">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><span class="glyphicon glyphicon-inbox box"></span> Paczka 1</li>
-                    </ul>
-                </div>
-                <div class="reset-margin-bottom form-group">
-                    <div class="panel panel-default">
-                        <div class="panel-body" id="boxes">Deliver from KRAKOW to WARSAW unitil 12.05.2018</div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 offset-down">
+            <div class="row top-buffer">
+                <form class="form-horizontal">
+                    <div class="reset-margin-bottom form-group">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="glyphicon glyphicon-inbox box"></span> Paczka 1
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="reset-margin-bottom form-group">
-                    <img src="data/map.png" class="map map-map"></img>
-                </div>
-                <div class="reset-margin-bottom form-group">
-                    <div class="panel panel-default">
-                        <div class="panel-body" id="boxes">PACKAGE DETAILS: mass, type, size</div>
+                    <div class="reset-margin-bottom form-group">
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="boxes">Deliver from KRAKOW to WARSAW unitil 12.05.2018</div>
+                        </div>
                     </div>
-                </div>
-                <div class="reset-margin-bottom form-group">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><span class="glyphicon glyphicon glyphicon-usd"></span> OFFERED
-                            INCOME (PLN)
-                        </li>
-                    </ul>
-                </div>
-                <div class="form-group">
-                    <div class="">
-                        <button type="button" onclick="location.href='SuccesDeliveryPage.html'"
-                                class="btn btn-primary submit-button">SUBMIT
-                        </button>
+                    <div class="text-center reset-margin-bottom form-group">
+                        <img src="data/map.png" class="map map-map"/>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="">
-                        <button type="button" onclick="location.href='DeliverPage.html'" class="btn submit-button">
-                            CANCEL
-                        </button>
+                    <div class="reset-margin-bottom form-group">
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="boxes">PACKAGE DETAILS: mass, type, size</div>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="center">
-                        <h5>PaczPaczCar 2018</h5>
+                    <div class="reset-margin-bottom form-group">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="glyphicon glyphicon glyphicon-usd"></span> OFFERED
+                                INCOME (PLN)
+                            </li>
+                        </ul>
                     </div>
-            </form>
+                    <div class="form-group">
+                        <div class="">
+                            <button type="button" onclick="location.href='SuccesDeliveryPage.html'"
+                                    class="btn btn-primary submit-button">SUBMIT
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="">
+                            <button type="button" onclick="location.href='DeliverPage.html'" class="btn submit-button">
+                                CANCEL
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>
