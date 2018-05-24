@@ -45,8 +45,8 @@
         </div>-->
         <div class="row top-buffer">
             <form class="form-horizontal">
-                <div class="reset-margin-bottom form-group">
-                    <h3 class="media-heading">Please enter pack details</h3>
+                <div class="form-group">
+                    <h3 class="text-center media-heading">Please enter pack details</h3>
                 </div>
                 <!--<div class="container2">
                     <div class="row">
@@ -58,30 +58,49 @@
                         </div>
                     </div>
                 </div>-->
-                <div class="form-group">Offerd price
-                    <input id="offeredPrice" class="form-control" type="text" name="offeredPrice"
-                           value="OFFERED PRICE (PLN)">
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-2 control-label" for="firstName">Offerd price</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="offeredPrice" class="form-control" type="text" name="offeredPrice" placeholder="OFFERED PRICE (PLN)">
+                    </div>
                 </div>
-                <div class="form-group">Pack Mass
-                    <input id="mass" class="form-control" type="text" name="mass" value="MASS (kg)">
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-2 control-label" for="firstName">Pack Mass</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="mass" class="form-control" type="text" name="mass" placeholder="MASS (kg)">
+                    </div>
                 </div>
-                <div class="form-group">Pack Height
-                    <input id="height" class="form-control" type="text" name="height" value="HEIGHT (cm)">
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-2 control-label" for="firstName">Pack Height</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="height" class="form-control" type="text" name="height" placeholder="HEIGHT (cm)">
+                    </div>
                 </div>
-                <div class="form-group">Pack Width
-                    <input id="width" class="form-control" type="text" name="width" value="WIDTH (cm)">
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-2 control-label" for="firstName">Pack Width</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="width" class="form-control" type="text" name="width" placeholder="WIDTH (cm)">
+                    </div>
                 </div>
-                <div class="form-group">Pack length
-                    <input id="length" class="form-control" type="text" name="length" value="LENGTH (cm)">
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-2 control-label" for="firstName">Pack length</label>
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="length" class="form-control" type="text" name="length" placeholder="LENGTH (cm)">
+                    </div>
                 </div>
-                <div class="reset-margin-bottom form-group">
+
+
+                <div class="text-center reset-margin-bottom form-group">
                     <h3>Deliver until:</h3>
                 </div>
                 <div class="form-group">
-                    <input id="date" class="form-control" type="date" name="date">
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input id="date" class="form-control" type="date" name="date" placeholder="DATE">
+                    </div>
                 </div>
 
-                <div class="reset-margin-bottom form-group">
+
+                <div class="text-center reset-margin-bottom form-group">
                     <h3>Deliver from:</h3>
                 </div>
 
@@ -93,42 +112,68 @@
                 </div>
 
                 <div id="choose_button" class="form-group">
-                    <input class="form-control" type="button" value="CHOOSE OTHER LOCATION"">
+                    <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                        <input class="form-control" type="button" value="CHOOSE OTHER LOCATION"">
+                    </div>
                 </div>
+
 
                 <div id="div_ctrl" hidden>
-
-                    <div class="form-group">Start city
-                        <input id="city1" class="form-control" type="text" name="city2" value="CITY">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label" for="firstName">Start city</label>
+                        <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                            <input id="city1" class="form-control" type="text" name="city1" placeholder="CITY">
+                        </div>
                     </div>
-                    <div class="form-group">Start street
-                        <input id="street1" class="form-control" type="text" name="street2" value="STREET">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label" for="firstName">Start street</label>
+                        <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                            <input id="street1" class="form-control" type="text" name="street1" placeholder="STREET">
+                        </div>
                     </div>
-                    <div class="form-group">Start number
-                        <input id="number1" class="form-control" type="text" name="number2" value="NUMBER">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label" for="firstName">Start number</label>
+                        <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                            <input id="number1" class="form-control" type="text" name="number1" placeholder="NUMBER">
+                        </div>
                     </div>
-                    <div class="form-group">Start postal-code
-                        <input id="postal1" class="form-control" type="text" name="postal2" value="POSTAL CODE">
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label" for="firstName">Start postal-code</label>
+                        <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                            <input id="postal1" class="form-control" type="text" name="postal1" placeholder="POSTAL CODE">
+                        </div>
                     </div>
-
-
                 </div>
 
-                <div class="reset-margin-bottom form-group">
+                <div class="text-center reset-margin-bottom form-group">
                     <h3>Deliver to:</h3>
                 </div>
-                <div class="form-group">Target city
-                    <input id="city2" class="form-control" type="text" name="city2" value="CITY">
-                </div>
-                <div class="form-group">Target street
-                    <input id="street2" class="form-control" type="text" name="street2" value="STREET">
-                </div>
-                <div class="form-group">Target number
-                    <input id="number2" class="form-control" type="text" name="number2" value="NUMBER">
-                </div>
-                <div class="form-group">Target postal-code
-                    <input id="postal2" class="form-control" type="text" name="postal2" value="POSTAL CODE">
-                </div>
+
+
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label" for="firstName">Target city</label>
+                        <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                            <input id="city2" class="form-control" type="text" name="city2" placeholder="CITY">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label" for="firstName">Target street</label>
+                        <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                            <input id="street2" class="form-control" type="text" name="street2" placeholder="STREET">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label" for="firstName">Target number</label>
+                        <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                            <input id="number2" class="form-control" type="text" name="number2" placeholder="NUMBER">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 col-md-2 control-label" for="firstName">Target postal-code</label>
+                        <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12">
+                            <input id="postal2" class="form-control" type="text" name="postal2" placeholder="POSTAL CODE">
+                        </div>
+                    </div>
                 <div class="form-group">
                     <div class="">
                         <button type="button" onclick="location.href='SuccesSendingPage.html'"
