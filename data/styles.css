@@ -369,5 +369,10 @@ input {
 
 .description-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
+}
+
+
+.checked {
+    color: orange;
 }

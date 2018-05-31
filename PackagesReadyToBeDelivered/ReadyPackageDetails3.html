@@ -69,40 +69,54 @@
             </div>
 
             <div class="description-container">
-
                 <label class="col-sm-2 col-md-2 control-label">Name of product:</label>
-                <span class="col-sm-2 col-md-2">Mountain boots</span>
+                <span class="col-sm-2 col-md-2">Mountain jacket</span>
 
-                <label class="col-sm-2 col-md-2 control-label">Order date:</label>
-                <span class="col-sm-2 col-md-2">21-May-2018 18:08</span>
+                <label class="col-sm-2 col-md-2 control-label">Publish date:</label>
+                <span class="col-sm-2 col-md-2">28-May-2018 10:08</span>
 
-                <label class="col-sm-2 col-md-2 control-label">Deliver date:</label>
-                <span class="col-sm-2 col-md-2">23-May-2018 10:08</span>
-
-                <label class="col-sm-2 col-md-2 control-label">Price:</label>
-                <span class="col-sm-2 col-md-2">59,99$</span>
+                <label class="col-sm-2 col-md-2 control-label">Proposed price:</label>
+                <span class="col-sm-2 col-md-2">159,99$</span>
 
                 <label class="col-sm-2 col-md-2 control-label">Quantity:</label>
                 <span class="col-sm-2 col-md-2">1</span>
 
+                <label class="col-sm-2 col-md-2 control-label">Weight(kg):</label>
+                <span class="col-sm-2 col-md-2">1.1kg</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Size(long/height/width)(meters):</label>
+                <span class="col-sm-2 col-md-2">0.4m/0.4m/0.6m</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Sender:</label>
+                <span class="col-sm-2 col-md-2">Matt Pbs</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Localization:</label>
+                <span class="col-sm-2 col-md-2">Krakow Balice</span>
             </div>
         </div>
 
         <div class="form-group order-details-container">
-            <button class="btn submit-button disable" type="button" disabled>
+            <button class="btn submit-button disable" type="button"  onclick="location.href='../PackagesReadyToBeDelivered/ReadyPackageDetails2.html'">
                 Previous
             </button>
 
-            <button class="btn submit-button " type="button"
-                    onclick="location.href='../OrderPackages/PackageDetail2.html'">
+            <button class="btn submit-button " type="button" onclick="location.href='../PackagesReadyToBeDelivered/ReadyPackageDetails4.html'">
                 Next
             </button>
         </div>
 
         <div class="form-group">
             <button class="btn submit-button btn-primary" type="button"
-                    onclick="location.href='../OrderHistoryDetailsPage.html'">
-                Back to order history
+                    onclick="location.href='../FulfillmentOfTheOrder_DeliverPage.html'">
+                Deliver this package
+            </button>
+        </div>
+
+        <div class="form-group">
+            <button class="btn submit-button btn-primary" type="button"
+                    onclick="location.href='../SenderPage.html.html'">
+                <!--TODO redirect to proper view-->
+                Back to sender menu
             </button>
         </div>
     </div>
