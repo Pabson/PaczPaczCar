@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegisterPage</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link href="../data/styles.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container column-view">
+    <div class="col-md-12 col-sm-12 col-xs-12 offset-down">
+        <div class="row search-bar">
+            <div class="col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 col-xs-12 remove-padding">
+                <div class="input-group">
+                    <span class="input-group-btn padding-right">
+                        <button class="btn btn-default white-background remove-padding" type="button"
+                                onclick="location.href='../LandingPage.html'">
+                            <img src="../data/small_logo.PNG" class="small-image"></button>
+                    </span>
+
+                    <input type="text" class="form-control search-bar-height" placeholder="Search for...">
+                    <span class="input-group-btn padding-left">
+                        <button class="btn btn-default white-background" type="button"
+                                onclick="location.href='../NotificationsPage.html'">
+                            <span class="glyphicon glyphicon-bell search search-icon large-icon"></span>
+                        </button>
+                    </span>
+
+                    <span class="input-group-btn padding-left">
+                        <button class="btn btn-default white-background dropdown-toggle" type="button"
+                                data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-menu-hamburger search search-icon large-icon"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="../OrderHistoryDetailsPage.html">Your orders history</a></li>
+                            <li><a href="../SendHistoryDetailsPage.html">Your sending history</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="../HelpPage.html">Help</a></li>
+                            <li><a href="../AccountSettingsPage.html">Account settings</a></li>
+                            <li><a href="../LogoutPage.html">Log Out</a></li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row top-buffer">
+            <h3 class="text-center offset-down"> Package 1 </h3>
+        </div>
+
+
+        <div class="form-group order-details-container">
+            <div class="image-container">
+                <a><img src="http://via.placeholder.com/100x100"></a>
+            </div>
+
+            <div class="description-container">
+                <label class="col-sm-2 col-md-2 control-label">Name of product:</label>
+                <span class="col-sm-2 col-md-2">Mountain jacket</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Publish date:</label>
+                <span class="col-sm-2 col-md-2">28-May-2018 10:08</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Proposed price:</label>
+                <span class="col-sm-2 col-md-2">159,99$</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Quantity:</label>
+                <span class="col-sm-2 col-md-2">1</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Weight(kg):</label>
+                <span class="col-sm-2 col-md-2">1.1kg</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Size(long/height/width)(meters):</label>
+                <span class="col-sm-2 col-md-2">0.4m/0.4m/0.6m</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Sender:</label>
+                <span class="col-sm-2 col-md-2">Matt Pbs</span>
+
+                <label class="col-sm-2 col-md-2 control-label">Localization:</label>
+                <span class="col-sm-2 col-md-2">Krakow Balice</span>
+            </div>
+        </div>
+
+        <div class="form-group order-details-container">
+            <button class="btn submit-button disable" type="button"  onclick="location.href='../PackagesReadyToBeDelivered/ReadyPackageDetails2.html'">
+                Previous
+            </button>
+
+            <button class="btn submit-button " type="button" onclick="location.href='../PackagesReadyToBeDelivered/ReadyPackageDetails4.html'">
+                Next
+            </button>
+        </div>
+
+        <div class="form-group">
+            <button class="btn submit-button btn-primary" type="button"
+                    onclick="location.href='../FulfillmentOfTheOrder_DeliverPage.html'">
+                Deliver this package
+            </button>
+        </div>
+
+        <div class="form-group">
+            <button class="btn submit-button btn-primary" type="button"
+                    onclick="location.href='../SenderPage.html.html'">
+                <!--TODO redirect to proper view-->
+                Back to sender menu
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
